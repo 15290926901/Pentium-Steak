@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>fancybox</title>
+		<link rel="stylesheet" type="text/css" href="css/fancybox.css"/>
+		<script src="js/fancybox.umd.js" type="text/javascript" charset="utf-8"></script>
+		<script type="module">
+		  // import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
+		  import { Fancybox } from "./js/fancybox.esm.js";
+		</script>
+		<style type="text/css">
+		
+			.page .page-list{
+				padding: 9vh 0;
+			}
+			.page .page-list li{
+				display: inline-block;
+				float: initial;
+				vertical-align: top;
+				width: 31%;
+				margin-right: 3.5%;
+				margin-bottom: 7vh;
+			}
+			.page .page-list li:nth-of-type(3n){
+				margin-right: 0;
+			}
+			.page .page-list li a{
+				color: #000000;
+			}
+			.page .page-list li a .img{
+				border-radius: 3px;
+				overflow: hidden;
+			}
+			.page .page-list li a .img img{
+				width: 100%;
+				transition: 0.5s;
+				max-width: 100%;
+			}
+			.page .page-list li a p{
+				margin-top: 20px;
+				line-height: 1.666;
+				font-size: 18px;
+				transition: 0.3s;
+			}
+			.page .page-list li:hover a .img img{
+				transform: scale(1.1);
+			}
+			.page .page-list li:hover a p{
+				color: #7caa17;
+			}
+			a[data-fancybox] img {
+			  cursor: zoom-in;
+			}
+			
+			.fancybox__container {
+			  --fancybox-bg: rgba(17, 6, 25, 0.85);
+			}
+			
+			.fancybox__container .fancybox__content {
+			  /* Create white border around the image */
+			  box-sizing: content-box;
+			  padding: 1rem;
+			  background: #fff;
+			
+			  border-radius: 6px;
+			  color: #374151;
+			  box-shadow: 0 8px 23px rgb(0 0 0 / 50%);
+			}
+			
+			.fancybox__caption {
+			  max-width: 80%;
+			
+			  /* Prevent opacity change when dragging up/down */
+			  --fancybox-opacity: 1;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<!-- <div class="flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
+		  <a
+		    data-caption="Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. "
+		    data-fancybox="gallery"
+		    href="https://lipsum.app/id/1/800x450"
+		  >
+		    <img class="rounded" src="https://lipsum.app/id/1/200x150" />
+		  </a>
+		  <a
+		    data-caption="Short caption"
+		    data-fancybox="gallery"
+		    href="https://lipsum.app/id/2/800x450"
+		  >
+		    <img class="rounded" src="https://lipsum.app/id/2/200x150" />
+		  </a>
+		  <a
+		    data-caption=""
+		    data-fancybox="gallery"
+		    href="https://lipsum.app/id/3/800x450"
+		  >
+		    <img class="rounded" src="https://lipsum.app/id/3/200x150" />
+		  </a>
+		  <a
+		    data-caption=""
+		    data-fancybox="gallery"
+		    href="https://lipsum.app/id/4/800x450"
+		  >
+		    <img src="https://lipsum.app/id/4/200x150" />
+		  </a>
+		  <a
+		    data-caption=""
+		    data-fancybox="gallery"
+		    href="https://lipsum.app/id/5/800x450"
+		  >
+		    <img class="rounded" src="https://lipsum.app/id/5/200x150" />
+		  </a>
+		  <a
+		    data-caption=""
+		    data-fancybox="gallery"
+		    href="https://lipsum.app/id/6/800x450"
+		  >
+		    <img class="rounded" src="https://lipsum.app/id/6/200x150" />
+		  </a>
+		  <a
+		    data-caption=""
+		    data-fancybox="gallery"
+		    href="https://lipsum.app/id/7/800x450"
+		  >
+		    <img class="rounded" src="https://lipsum.app/id/7/200x150" />
+		  </a>
+		</div> -->
+		<div class="page">
+			<div class="page-list">
+				<div class="otzz">
+					<h2>犇腾基金会主要项目</h2>
+					<ul class="clear">
+						<li class="fl">
+							<a href="../images/fancybox1.jpg"
+							 data-caption="Short caption"
+							 data-fancybox="gallery"
+		    >
+								<div class="img"><img src="../images/charity1.jpg" alt=""></div>
+								<p>2021年金秋助学活动</p>
+							</a>
+						</li><li class="fl">
+							<a href="../images/fancybox2.jpg"
+											 data-caption="Short caption"
+											 data-fancybox="gallery"
+							>
+								<div class="img"><img src="../images/charity2.jpg" alt=""></div>
+								<p>支持原阳县防汛救灾返现爱心</p>
+							</a>
+						</li><li class="fl">
+							<a href="../images/fancybox3.jpg"
+											 data-caption="Short caption"
+											 data-fancybox="gallery"
+							>
+								<div class="img"><img src="../images/charity3.jpg" alt=""></div>
+								<p>雨露计划 | 犇腾助力，健康成长</p>
+							</a>
+						</li><li class="fl">
+							<a href="../images/fancybox4.jpg"
+											 data-caption="Short caption"
+											 data-fancybox="gallery"
+							>
+								<div class="img"><img src="../images/charity4.jpg" alt=""></div>
+								<p>助力复学，公益消杀</p>
+							</a>
+						</li><li class="fl">
+							<a href="../images/fancybox5.jpg"
+											 data-caption="Short caption"
+											 data-fancybox="gallery"
+							>
+								<div class="img"><img src="../images/charity5.jpg" alt=""></div>
+								<p>疫情爱心物资捐赠</p>
+							</a>
+						</li><li class="fl">
+							<a href="../images/fancybox6.jpg"
+											 data-caption="Short caption"
+											 data-fancybox="gallery"
+							>
+								<div class="img"><img src="../images/charity6.jpg" alt=""></div>
+								<p>致敬可爱的人——疫情当下一线医护人员守护我们的平安 </p>
+							</a>
+						</li><li class="fl">
+							<a href="../images/fancybox7.jpg"
+											 data-caption="Short caption"
+											 data-fancybox="gallery"
+							>
+								<div class="img"><img src="../images/charity7.jpg" alt=""></div>
+								<p>犇腾嘉兴全店参与帮助困境地区儿童免于饥饿的困扰 </p>
+							</a>
+						</li><li class="fl">
+							<a href="../images/fancybox8.jpg"
+											 data-caption="Short caption"
+											 data-fancybox="gallery"
+							>
+								<div class="img"><img src="../images/charity8.jpg" alt=""></div>
+								<p>护苗行动  为困境儿童发声 </p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
