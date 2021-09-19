@@ -1,0 +1,209 @@
+.otzz{
+	max-width: 1300px;
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.main {
+	position: relative;
+}
+/* *****banner***** */
+.banner {
+	transition: 0.5s all ease;
+	position: relative;
+	height: 600px;
+}
+.banner .banner-content{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 600px;
+	z-index: 2;
+	background: url(../images/1614218349176241.jpg) no-repeat center/cover;
+}
+.banner .banner-content>div{
+	height: 100%;
+}
+.banner .banner-content .bg{
+	width: 100%;
+	height: 100%;
+	
+}
+.banner .banner-content .bg .banner-wrap{
+	height: 100%;
+	position: relative;
+}
+.banner .banner-content .bg .banner-wrap div{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	color: #fff;
+	left: 0;
+	width: 100%;
+}
+/* *****page***** */
+.page{
+	background: #fff;
+	z-index: 5;
+	position: relative;
+}
+.page .pager{
+	z-index: 6;
+	padding-bottom: 20px;
+}
+.page .pager ul{
+	width: 325px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.page .pager ul li{
+	width: 40px;
+	height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #E5E5E5;
+	background: #FFFFFF;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+}
+.li-active{
+	background: #7CAA17 !important;
+	color: #fff;
+	border-color: #7CAA17 !important;
+}
+.page .otzz ul{
+	padding: 12vh 0 0;
+}
+.page .otzz ul li{
+	width: 30%;
+	margin-right: 5%;
+	margin-bottom:11vh ;
+	position: relative;
+	float: left;
+}
+.page .otzz ul li:nth-of-type(3n){
+	margin-right: 0;
+}
+.page .otzz ul li a{
+	display: block;
+	width: 100%;
+}
+.page .otzz ul li h3{
+	font-size: 20px;
+	font-weight: bold;
+	margin: 45px 0 20px;
+	color: #000000;
+	line-height: 1.8;
+	height: 72px;
+}
+.page .otzz ul li p{
+	font-size: 18px;
+	line-height: 25px;
+	color: #000;
+}
+.page .otzz ul li .img{
+	position: relative;
+	transition: .5s;
+	z-index: 1;
+	width: 100%;
+}
+.page .otzz ul li .img .bg{
+	width: 108%;
+	height: 108%;
+	background: url(../images/news_bg.png) no-repeat center/cover;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	z-index: -1;
+}
+.page .otzz ul li .img::after{
+	content: '';
+	position: absolute;
+	display: block;
+	width: 61px;
+	height: 83px;
+	top: -20px;
+	left: 48%;
+	background: url(../images/pin.png) no-repeat center/cover;
+}
+.page .otzz ul li .img img{
+	width: 100%;
+	transition: .5s;
+	max-width: 100%	;
+}
+.page .otzz ul li:hover .img{
+	transform: translate(2px,-5px) scale(1.01);
+}
+.page .otzz ul li:hover h3{
+	color: #7CAA17;
+}
+.notclickn{
+	pointer-events: none;
+}
+
+
+/* *************响应式************* */
+@media screen and (max-width: 1460px) {
+	.banner,.banner .banner-content{
+		height: 550px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	
+}
+@media screen and (max-width: 1200px) {
+	.banner,.banner .banner-content{
+		height: 500px;
+	}
+	
+}
+@media screen and (max-width: 992px) {
+	.banner,.banner .banner-content{
+		height: 400px;
+	}
+	.banner .banner-content .bg .banner-wrap div img{
+		width: 40%;
+	}
+	.page .otzz ul li{
+		margin-bottom: 4vh;
+	}
+	.page .otzz ul li h3{
+		font-size: 18px;
+		height: 64px;
+		margin: 20px 0 10px;
+	}
+	
+}
+@media screen and (max-width: 768px) {
+	.banner,.banner .banner-content{
+		height: 300px;
+	}
+	.page .otzz ul li{
+		width: 49%;
+		margin-right: 2%;
+	}
+	.page .otzz ul li:nth-of-type(3n){
+		margin-right: 2%;
+	}
+	.page .otzz ul li:nth-of-type(2n){
+		margin-right: 0 !important;
+	}
+	.page .otzz ul li h3{
+		font-size: 16px;
+		height: 56px;
+	}
+	.page .otzz ul li p{
+		font-size: 16px;
+	}
+	
+}
+@media screen and (max-width: 468px) {
+	.banner,.banner .banner-content{
+		height: 280px;
+	}
+}

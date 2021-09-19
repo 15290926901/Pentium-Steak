@@ -1,0 +1,234 @@
+.otzz{
+	max-width: 1300px;
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.main {
+	position: relative;
+}
+/* *****banner***** */
+.banner {
+	transition: 0.5s all ease;
+	position: relative;
+	height: 600px;
+}
+.banner .banner-content{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 600px;
+	z-index: 2;
+	background: url(../images/1614665009848860.jpg) no-repeat center/cover;
+}
+.banner .banner-content>div{
+	height: 100%;
+}
+.banner .banner-content .bg{
+	width: 100%;
+	height: 100%;
+	
+}
+.banner .banner-content .bg .banner-wrap{
+	height: 100%;
+	position: relative;
+}
+.banner .banner-content .bg .banner-wrap div{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	color: #fff;
+	left: 0;
+	width: 100%;
+}
+.content{
+	z-index: 5;
+	position: relative;
+	background-color: #fff;
+	color: #fff;
+}
+.content .box1{
+	padding: 11vh 0 10vh;
+	border-bottom: 1px solid #e5e5e5;
+}
+.content .box h2{
+	font-size: 36px;
+	font-weight: 400;
+	margin-bottom: 6vh;
+	line-height: 1.1;
+	color: #000000;
+}
+.content .box1 .box1-content{
+	font-size: 18px;
+	color: #666;
+	line-height: 2;
+}
+.content .box1 .box1-content strong{
+	font-size: 24px;
+	color: #000000;
+	font-weight: 700;
+	white-space: normal;
+}
+
+.content .box2{
+	padding: 8vh 0 10vh;
+}
+.content .box2 ul{
+	margin-bottom: 9vh;
+	color: #000000;
+}
+.content .box2 ul li:nth-of-type(2n-1){
+	background-color: #f6f6f6;
+}
+.content .box2 ul li h3{
+	padding: 22px 25px 22px 30px;
+	font-size: 24px;
+	font-weight: 400;
+	position: relative;
+	cursor: pointer;
+	box-sizing: border-box;
+	clear: both;
+	vertical-align: middle;
+	line-height: 1.1;
+}
+.content .box2 ul li h3 i{
+	float: right;
+	width: 21px;
+	height: 21px;
+	display: block;
+	position: relative;
+}
+.content .box2 ul li h3 i::after{
+	content: '';
+	height: 100%;
+	width: 3px;
+	background: #7caa17;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: 0.3s;
+	transform-origin: center;
+}
+.content .box2 ul li h3 i::before{
+	content: '';
+	width: 100%;
+	height: 3px;
+	background: #7caa17;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.content .box2 ul li h3.active i::after{
+	height: 0;
+}
+.content .box2 ul li .li-content{
+	border-top: 1px solid #e5e5e5;
+	padding: 35px 25px 45px 30px;
+	box-sizing: border-box;
+	display: none;
+}
+.content .box2 ul li .li-content div{
+	color: #666;
+	font-size: 18px;
+	line-height: 2;
+	margin-bottom: 30px;
+}
+.content .box2 ul li .li-content div p:nth-of-type(1){
+	color: #000000;
+}
+.content .box2 .box2-content{
+	line-height: 1.66;
+	color: #666666;
+	font-size: 18px;
+}
+.content .box2 .box2-content table{
+	width: 100%;
+	background: #7caa17;
+	box-shadow: 2.5px 4.33px 13px 0px rgb(124 170 23 / 34%);
+	border-radius: 3px;
+}
+.content .box2 .box2-content table td{
+	color: #fff;
+	vertical-align: middle;
+}
+.content .box2 .box2-content table td:first-of-type{
+	width: 140px;
+	text-align: center;
+	font-size: 18px;
+}
+.content .box2 .box2-content table td:last-of-type{
+	padding: 18px 0;
+}
+.content .box2 .box2-content table td:last-of-type p{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 30px;
+	font-size: 18px;
+}
+
+
+/* *************响应式************* */
+@media screen and (max-width: 1460px) {
+	.banner,.banner .banner-content{
+		height: 550px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	
+}
+@media screen and (max-width: 1200px) {
+	.banner,.banner .banner-content{
+		height: 500px;
+	}
+	.content .box h2{
+		font-size: 32px;
+	}
+}
+@media screen and (max-width: 992px) {
+	.banner,.banner .banner-content{
+		height: 400px;
+	}
+	.banner .banner-content .bg .banner-wrap div img{
+		width: 40%;
+	}
+	.content .box h2{
+		font-size: 24px;
+	}
+	.content .box1 .box1-content,.content .box2 .box2-content{
+		line-height: 1.8;
+		font-size: 16px;
+	}
+	.content .box1 .box1-content strong,.content .box2 ul li h3{
+		font-size: 20px;
+	}
+	.content .box2 .box2-content table td:last-of-type p{
+		padding: 0 10px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.banner,.banner .banner-content{
+		height: 300px;
+	}
+	.content .box1 .box1-content strong,.content .box2 ul li h3{
+		font-size: 18px;
+	}
+	.content .box2 .box2-content table td:first-of-type{
+		width: 100px;
+		font-size: 16px;
+	}
+	.content .box2 .box2-content table td:last-of-type p{
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 468px) {
+	.banner,.banner .banner-content{
+		height: 280px;
+	}
+	.content .box2 ul li h3{
+		font-size: 16px;
+	}
+}

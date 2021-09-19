@@ -1,0 +1,225 @@
+.head{
+	background-color: #292929;
+	height: 82px;
+	line-height: 82px;
+}
+.head .menu{
+	position: relative;
+	background-color: transparent;
+	height: 100%;
+	width: auto;
+}
+.head .index-logo{
+	top: 15px;
+}
+.head .search p,.head .search i{
+	margin-top: 0;
+}
+.otzz{
+	max-width: 1300px;
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.main {
+	position: relative;
+}
+/* *****地图***** */
+.main .map{
+	width: 100%;
+	height: 990px;
+	box-sizing: border-box;
+}
+.main .map iframe{
+	width: 100%;
+	height: 100% !important;
+}
+/* *****门店查询***** */
+.main .squery{
+	position: absolute;
+	left: 50px;
+	top: 35px;
+	z-index: 10;
+	background-color: #fff;
+	width: 456px;
+}
+.main .squery h1{
+	text-align: center;
+	background: #fff;
+	font-size: 18px;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #eee;
+	position: relative;
+	z-index: 1;
+	font-weight: 400;
+}
+.main .squery .squery-search{
+	position: relative;
+	width: 100%;
+	background: #FFF;
+	z-index: 3;
+	padding: 30px;
+	padding-bottom: 0;
+	box-sizing: border-box;
+}
+.main .squery .squery-search .province{
+	position: relative;
+	background: #FFF;
+	margin-bottom: 15px;
+}
+.main .squery .squery-search .province>a,.main .squery .squery-search .city>a{
+	display: block;
+	padding: 0 10px;
+	font-size: 14px;
+	color: #727272;
+	border: 1px solid #535353;
+	height: 45px;
+	line-height: 45px;
+	box-sizing: border-box;
+}
+.main .squery .squery-search .province>a i,.main .squery .squery-search .city>a i{
+	float: right;
+	line-height: 45px;
+}
+.main .squery .squery-search .province .province-list{
+	position: absolute;
+	top: 45px;
+	left: 0;
+	width: 100%;
+	background: #FFF;
+	box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+	padding: 45px 0;
+	z-index: 2;
+	display: none;
+	height: 200px;
+	overflow-x: hidden;
+	display: none;
+	box-sizing: border-box;
+}
+.main .squery .squery-search .province .province-list ul li{
+	padding: 0 35px;
+	box-sizing: border-box;
+	transition: all .36s;
+}
+.main .squery .squery-search .province .province-list ul li a{
+	border-bottom: 1px solid #e5e5e5;
+	display: block;
+	line-height: 43px;
+	text-indent: 10px;
+	font-size: 14px;
+	color: #aeaeae;
+	transition: all .36s;
+}
+.main .squery .squery-search .city{
+	position: relative;
+	background: #FFF;
+	margin-bottom: 15px;
+}
+.main .squery .squery-search .city .city-list{
+	position: absolute;
+	top: 45px;
+	left: 0;
+	width: 100%;
+	background: #FFF;
+	box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+	padding: 45px 40px 25px;
+	z-index: 2;
+	display: none;
+	height: 200px;
+	overflow-x: hidden;
+	box-sizing: border-box;
+}
+.main .squery .squery-search .city .city-list dl{
+	padding: 0;
+	margin: 0 0 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.main .squery .squery-search .city .city-list dl:last-of-type{
+	margin: 0;
+	border: 0;
+}
+.main .squery .squery-search .city .city-list dl dt{
+	font-size: 14px;
+	color: #000;
+	font-weight: normal;
+	margin: 0 0 20px;
+	line-height: 1.4;
+}
+.main .squery .squery-search .city .city-list dl dd{
+	line-height: 1.4;
+}
+.main .squery .squery-search .city .city-list dl dd a{
+	font-size: 14px;
+	color: #aeaeae;
+	transition: all .36s;
+	display: block;
+	width: 20%;
+	margin: 0 0 20px;
+}
+.main .squery .search-md{
+	background: #FFF;
+	margin-bottom: 15px;
+	position: relative;
+}
+.main .squery .search-md input{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	border: 0;
+	border-bottom: 1px solid #d2d2d2;
+	padding: 0 75px 0 10px;
+	font-size: 14px;
+	color: #727272;
+	background: none;
+	box-sizing: border-box;
+}
+.main .squery .search-md a{
+	position: absolute;
+	right: 20px;
+	top: 0;
+	font-size: 14px;
+	color: #000;
+}
+.main .squery .shop-list{
+	position: relative;
+	z-index: 2;
+	height: 380px;
+	overflow: hidden;
+	background: #fff;
+	overflow-y: scroll;
+	border-top: 1px solid #eeeeee;
+	box-sizing: border-box;
+}
+
+
+/* *************响应式************* */
+@media screen and (max-width: 1460px) {
+	
+}
+@media screen and (min-width: 1200px) {
+	
+}
+@media screen and (max-width: 1200px) {
+	
+}
+@media screen and (max-width: 992px) {
+	.head .index-logo a img{
+		width: 100%;
+	}
+	.main .squery{
+		width: 380px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.main .squery{
+		width: calc(100% - 100px);
+	}
+}
+@media screen and (max-width: 638px) {
+	.main .squery{
+		width: 100%;
+		position: static;
+	}
+}
