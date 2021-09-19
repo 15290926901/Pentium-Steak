@@ -1,0 +1,124 @@
+/* *****page***** */
+.page{
+	position: relative;
+	z-index: 5;
+	padding: 9vh 0 10vh;
+	background: url(../images/mainbgt.jpg) no-repeat center/cover;
+}
+.page .fy{
+	margin-bottom: 80px;
+	text-align: center;
+}
+.page .fy ul{
+	display: flex;
+	width: 185px;
+	margin: 20px auto;
+	justify-content: space-between;
+}
+.page .fy ul li{
+	background: #fff;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	box-sizing: border-box;
+	font-size: 14px;
+	border: 1px solid #E5E5E5;
+	color: #7caa17;
+	cursor: pointer;
+}
+.active{
+	border-color: #7caa17 !important;
+	color: #fff !important;
+	background-color: #7caa17 !important;
+}
+.page .steak{
+	margin-bottom: 60px;
+}
+.page .steak img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.page .content-list .list-div{
+	display: inline-block;
+	width: 46%;
+	margin-right: 4%;
+	margin-bottom: 16vh;
+	vertical-align: top;
+	box-sizing: border-box;
+	visibility: visible;
+}
+.page .content-list .list-div:nth-of-type(2n){
+	margin-right: 0;
+	margin-left: 4%;
+	transform: translateY(-8vh);
+}
+.padd{
+	padding: 0 5vw;
+}
+.page .content-list .list-div .img{
+	overflow: hidden;
+	width: 100%;
+}
+.page .content-list .list-div .img img{
+	width: 100%;
+	transition: 0.8s;
+}
+.page .content-list .list-div .img:hover img{
+	transform: scale(0.96);
+}
+.page .content-list .list-div h3{
+	font-size: 24px;
+	font-weight: bold;
+	margin: 20px 0 15px;
+	line-height: 1.1;
+	color: #000000;
+}
+.page .content-list .list-div p{
+	color: #666;
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+
+/* *************响应式************* */
+@media screen and (max-width: 1460px) {
+	
+}
+
+@media screen and (max-width: 1200px) {
+	
+	
+}
+@media screen and (max-width: 992px) {
+	.page .steak img{
+		width: 30%;
+	}
+	.page .content-list .list-div{
+		margin-bottom: 5vh;
+	}
+	.page .content-list .list-div h3{
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.page .content-list .list-div{
+		width: 100%;
+		margin: 0 auto 5vh;
+		padding: 0 20px;
+	}
+	.page .content-list .list-div:nth-of-type(2n){
+		transform: none;
+		margin-left: 0;
+	}
+	.page .content-list .list-div h3{
+		font-size: 18px;
+	}
+	.padd{
+		padding: 0 15vw;
+	}
+}
+@media screen and (max-width: 468px) {
+	
+}

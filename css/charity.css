@@ -1,0 +1,227 @@
+.otzz{
+	max-width: 1300px;
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.main {
+	position: relative;
+}
+/* *****banner***** */
+.banner {
+	transition: 0.5s all ease;
+	position: relative;
+	height: 600px;
+}
+.banner .banner-content{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 600px;
+	z-index: 2;
+	background: url(../images/1614310878926254.jpg) no-repeat center/cover;
+}
+.banner .banner-content>div{
+	height: 100%;
+}
+.banner .banner-content .bg{
+	width: 100%;
+	height: 100%;
+	
+}
+.banner .banner-content .bg .banner-wrap{
+	height: 100%;
+	position: relative;
+}
+.banner .banner-content .bg .banner-wrap div{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	color: #fff;
+	left: 0;
+	width: 100%;
+}
+/* *****page***** */
+.page{
+	position: relative;
+	z-index: 5;
+	background-color: #FFFFFF;
+}
+.page-introduce{
+	padding: 30px 0;
+}
+.page-introduce li{
+	padding: 8vh 0;
+	border-bottom: 1px solid #E5E5E5;
+}
+.page-introduce li:last-of-type{
+	border: none;
+}
+.page-introduce li .img{
+	width: 41%;
+	padding: 0 2vw;
+	box-sizing: border-box;
+}
+.page-introduce li .img img{
+	max-width: 100%;
+	margin: 0 auto;
+	/* display: block; */
+}
+.page-introduce li:last-of-type .img{
+	width: 	50%;
+	padding: 0;
+}
+.page-introduce li:last-of-type .img img{
+	margin: 0;
+}
+.page-introduce li .content{
+	width: 59%;
+}
+.page-introduce li:last-of-type .content{
+	width: 50%;
+}
+.page-introduce li .content h2,.page .page-distributed h2,.page .page-list h2{
+	font-size: 36px;
+	color: #000;
+	font-weight: 400;
+	margin-bottom: 4.5vh;
+	line-height: 1.1;
+}
+.page-introduce li .content .text{
+	font-size: 18px;
+	line-height: 2;
+	color: #000000;
+}
+.page-introduce li:last-of-type .content .text{
+	color: #666666;
+}
+.page .page-distributed{
+	background-color: #EEEEEE;
+	padding: 10vh 0 9vh;
+}
+.page .page-distributed .content{
+	line-height: 1.666;
+	font-size: 18px;
+	color: #666666;
+}
+.page .page-distributed .content strong{
+	color: #000000;
+	font-weight: 700;
+}
+.page .page-distributed .content hr{
+	margin: 20px 0;
+	border-top: 1px solid #DCDCDC;
+}
+.page .page-list{
+	padding: 9vh 0;
+}
+.page .page-list li{
+	display: inline-block;
+	float: initial;
+	vertical-align: top;
+	width: 31%;
+	margin-right: 3.5%;
+	margin-bottom: 7vh;
+}
+.page .page-list li:nth-of-type(3n){
+	margin-right: 0;
+}
+.page .page-list li a{
+	color: #000000;
+}
+.page .page-list li a .img{
+	border-radius: 3px;
+	overflow: hidden;
+}
+.page .page-list li a .img img{
+	width: 100%;
+	transition: 0.5s;
+	max-width: 100%;
+}
+.page .page-list li a p{
+	margin-top: 20px;
+	line-height: 1.666;
+	font-size: 18px;
+	transition: 0.3s;
+}
+.page .page-list li:hover a .img img{
+	transform: scale(1.1);
+}
+.page .page-list li:hover a p{
+	color: #7caa17;
+}
+
+
+/* *************响应式************* */
+@media screen and (max-width: 1460px) {
+	.banner,.banner .banner-content{
+		height: 550px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	
+
+}
+@media screen and (max-width: 1200px) {
+	.banner,.banner .banner-content{
+		height: 500px;
+	}
+	.page-introduce li .content h2,.page .page-distributed h2,.page .page-list h2{
+		font-size: 32px;
+	}
+	
+}
+@media screen and (max-width: 992px) {
+	.banner,.banner .banner-content{
+		height: 400px;
+	}
+	.banner .banner-content .bg .banner-wrap div img{
+		width: 40%;
+	}
+	.page-introduce li .content h2,.page .page-distributed h2,.page .page-list h2{
+		font-size: 24px;
+	}
+	.page-introduce li .content .text{
+		font-size: 16px;
+		line-height: 1.8;
+	}
+	.page .page-list li a p{
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.banner,.banner .banner-content{
+		height: 300px;
+	}
+	.page-introduce li .content,.page-introduce li .img{
+		width: 100% !important;
+		text-align: center !important;
+	}
+	.page .page-distributed .content{
+		font-size: 16px;
+	}
+	.page .page-list li{
+		width: 49%;
+		margin-right: 2%;
+	}
+	.page .page-list li:nth-of-type(3n){
+		margin-right: 2%;
+	}
+	.page .page-list li:nth-of-type(2n){
+		margin-right: 0;
+	}
+}
+@media screen and (max-width: 468px) {
+	.banner,.banner .banner-content{
+		height: 280px;
+	}
+	.page .page-list li{
+		margin-bottom: 20px;
+	}
+	.page .page-list li a p{
+		font-size: 14px;
+		margin-top: 5px;
+	}
+}

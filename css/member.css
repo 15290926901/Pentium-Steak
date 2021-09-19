@@ -1,0 +1,192 @@
+.otzz{
+	max-width: 1300px;
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.main {
+	position: relative;
+}
+/* *****banner***** */
+.banner {
+	transition: 0.5s all ease;
+	position: relative;
+	height: 600px;
+}
+.banner .banner-content{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 600px;
+	z-index: 2;
+	background: url(../images/1614240413259393.jpg) no-repeat center/cover;
+}
+.banner .banner-content>div{
+	height: 100%;
+}
+.banner .banner-content .bg{
+	width: 100%;
+	height: 100%;
+	
+}
+.banner .banner-content .bg .banner-wrap{
+	height: 100%;
+	position: relative;
+}
+.banner .banner-content .bg .banner-wrap div{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	color: #fff;
+	left: 0;
+	width: 100%;
+}
+/* *****page***** */
+.page{
+	position: relative;
+	z-index: 5;
+	background-color: #FFFFFF;
+}
+.page .page-top{
+	padding: 10vh 0 9vh;
+}
+.page .page-top .content>p{
+	text-align: center;
+	color: #000;
+	font-size: 18px;
+	line-height: 1.42;
+}
+.page .page-top .content>p:first-of-type{
+	font-size: 48px;
+	font-weight: bold;
+}
+.page .page-top .content>p span{
+	font-size: 24px;
+	font-weight: 900;
+	color: #7caa17;
+}
+.page .page-top .content table{
+	border: 1px solid #e5e5e5;
+	background: #f9f9f9;
+	border-radius: 8px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.page .page-top .content table:first-of-type td:first-of-type{
+	width: 53%;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 35px 10px;
+}
+.page .page-top .content table:first-of-type td:first-of-type img{
+	/* width: 100%; */
+	max-width: 100%;
+	/* height: auto; */
+}
+.page .page-top .content table:first-of-type td:last-of-type{
+	text-align: center;
+	box-sizing: border-box;
+	padding: 25px 10px;
+}
+.page .page-top .content table:first-of-type td:last-of-type p,.page .page-top .content table:last-of-type td:first-of-type p,.page .page-top .content table:last-of-type td:last-of-type p{
+	color: #000;
+	font-size: 18px;
+	line-height: 1.66;
+}
+.page .page-top .content table:first-of-type td:last-of-type p:last-of-type,.page .page-top .content table:last-of-type td:first-of-type p:first-of-type{
+	font-size: 36px;
+	font-weight: 900;
+	color: #7caa17;
+}
+.page .page-top .content table:last-of-type td:first-of-type{
+	width: 60%;
+	padding: 90px 25% 110px 5.5%;
+	box-sizing: border-box;
+	position: relative;
+}
+.page .page-top .content table:last-of-type td:first-of-type p img{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 48.2%;
+	max-width: 100%;
+}
+.page .page-top .content table:last-of-type td:last-of-type{
+	text-align: center;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.page .page-top .content table:last-of-type td:last-of-type p img{
+	width: 100%;
+	max-width: 100%;
+}
+.page .page-bottom{
+	text-align: center;
+	color: #fff;
+	background: #7caa17;
+	padding: 8vh 0;
+}
+.page .page-bottom .img img{
+	max-width: 100%;
+}
+.page .page-bottom .text{
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.25;
+	font-style: italic;
+	margin-top: 20px;
+}
+
+
+/* *************响应式************* */
+@media screen and (max-width: 1460px) {
+	.banner,.banner .banner-content{
+		height: 550px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	
+
+}
+@media screen and (max-width: 1200px) {
+	.banner,.banner .banner-content{
+		height: 500px;
+	}
+	.page .page-top .content table:first-of-type td:last-of-type p:last-of-type,.page .page-top .content table:last-of-type td:first-of-type p:first-of-type{
+		font-size:32px;
+	}
+}
+@media screen and (max-width: 992px) {
+	.banner,.banner .banner-content{
+		height: 400px;
+	}
+	.banner .banner-content .bg .banner-wrap div img{
+		width: 40%;
+	}
+	.page .page-top .content table:first-of-type td:last-of-type p:last-of-type,.page .page-top .content table:last-of-type td:first-of-type p:first-of-type{
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.banner,.banner .banner-content{
+		height: 300px;
+	}
+	.page .page-top .content table:first-of-type td:first-of-type,.page .page-top .content table:last-of-type td:first-of-type,.page .page-top .content table:first-of-type td:last-of-type,.page .page-top .content table:last-of-type td:last-of-type{
+		width: 100% !important;
+		display: block;
+	}
+	.page .page-top .content table:last-of-type td:first-of-type{
+		padding: 20px 10px;
+		text-align: center;	
+	}
+	.page .page-top .content table:last-of-type td:first-of-type p img {
+		display: none;
+	}
+}
+@media screen and (max-width: 468px) {
+	.banner,.banner .banner-content{
+		height: 280px;
+	}
+}

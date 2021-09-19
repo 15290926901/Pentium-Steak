@@ -1,0 +1,258 @@
+.otzz{
+	max-width: 1300px;
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.main {
+	position: relative;
+}
+/* *****banner***** */
+.banner {
+	transition: 0.5s all ease;
+	position: relative;
+	height: 600px;
+}
+.banner .banner-content{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 600px;
+	z-index: 2;
+	background: url(../images/gold.jpg) no-repeat center/cover;
+}
+.banner .banner-content>div{
+	height: 100%;
+}
+.banner .banner-content .bg{
+	width: 100%;
+	height: 100%;
+	
+}
+.banner .banner-content .bg .banner-wrap{
+	height: 100%;
+	position: relative;
+}
+.banner .banner-content .bg .banner-wrap div{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	color: #fff;
+	left: 0;
+	width: 100%;
+}
+/* *****page***** */
+.page{
+	position: relative;
+	z-index: 5;
+	background-color: #fff;
+}
+.page .store1{
+	padding: 13vh 0 11vh;
+	position: relative;
+}
+.page .store1 .line{
+	width: 1px;
+	height: 114px;
+	background-color: #7caa17;
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateY(60%);
+}
+.page .store1 .content{
+	font-size: 18px;
+	line-height: 2;
+	color: #010101;
+	max-width: 925px;
+	margin: 0 auto;
+	text-align: center;
+}
+.page .store2{
+	background: url(../images/store2.jpg) no-repeat center/cover;
+	background-attachment: fixed;
+	padding: 9vh 0 10vh;
+	color: #fff;
+}
+.page .store2 .content{
+	font-size: 18px;
+	line-height: 2;
+	text-align: center;
+	color: #fff;
+}
+.page .store2 .content p:first-of-type{
+	font-size: 36px;
+	font-weight: bold;
+	color: #7caa17;
+}
+.page .store3{
+	background: url(../images/store3.jpg) no-repeat center/cover;
+	background-attachment: fixed;
+	padding: 25vh 0 30vh;
+	color: #fff;
+}
+.page .store3 .content{
+	text-align: center;
+	font-size: 36px;
+	line-height: 1.38;
+}
+.page .store3 .content a{
+	display: block;
+	width: 75px;
+	height: 75px;
+	margin: 6vh auto 0;
+	background: url(../images/play.png) no-repeat center/cover;
+}
+.video{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+	z-index: 99999999999;
+}
+.video .bg{
+	background-color: #000000;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: .9;
+}
+.video .video-content{
+	opacity: 1;
+	width: 852px;
+	min-height: 550px;
+	max-height: 90vh;
+	/* background-color: #000000; */
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.video .video-content video{
+	width: 100%;
+	height: 100%;
+}
+.video .close{
+	position: absolute;
+	top: calc(52px + 10%);
+	right: 5%;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	color: #fff;
+	line-height: 30px;
+	font-size: 30px;
+}
+.page .store4{
+	background-color: #7caa17;
+	padding: 8vh 0;
+}
+.page .store4 .content{
+	color: #fff;
+	text-align: center;
+}
+.page .store4 .content>p{
+	font-size: 36px;
+}
+.page .store4 .content>a{
+	color: #fff;
+	font-size: 18px;
+	line-height: 25px;
+	position: relative;
+	margin-top: 15px;
+	display: inline-block;
+	padding-left: 25px;
+}
+.page .store4 .content>a span{
+	position: absolute;
+	display: block;
+	width: 14px;
+	height: 17px;
+	left: 0;
+	top: 4px;
+	background: url(../images/ditu.png) no-repeat center;
+}
+.page .store4 .content table{
+	margin: 0 auto 5vh; 
+}
+.page .store4 .content table td{
+	box-sizing: border-box;
+	padding: 0 2.6vw;
+	color: rgba(225,225,225,.5);
+}
+.page .store4 .content table td p{
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+.page .store4 .content table td p img{
+	max-width: 100%;
+}
+
+
+/* *************响应式************* */
+@media screen and (max-width: 1460px) {
+	.banner,.banner .banner-content{
+		height: 550px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	
+
+}
+@media screen and (max-width: 1200px) {
+	.banner,.banner .banner-content{
+		height: 500px;
+	}
+	.page .store2 .content p:first-of-type,.page .store3 .content,.page .store4 .content>p{
+		font-size: 32px;
+	}
+}
+@media screen and (max-width: 998px){
+	.video .video-content{
+		width: 80%;
+		max-height: 80vh;
+		min-height: 44.9vh;
+	}
+} 
+@media screen and (max-width: 992px) {
+	.banner,.banner .banner-content{
+		height: 400px;
+	}
+	.banner .banner-content .bg .banner-wrap div img{
+		width: 40%;
+	}
+	.page .store2 .content{
+		line-height: 1.8;
+		font-size: 16px;
+	}
+	.page .store2 .content p:first-of-type,.page .store3 .content,.page .store4 .content>p{
+		font-size: 24px;
+	}
+	.page .store3{
+		background-attachment: scroll !important;
+		padding: 8vh 0;
+	}
+}
+@media screen and (max-width: 768px) {
+	.banner,.banner .banner-content{
+		height: 300px;
+	}
+	.page .store4 .content table td{
+		display: inline-block;
+		width: 50%;
+		vertical-align: middle;
+	}
+}
+@media screen and (max-width: 468px) {
+	.banner,.banner .banner-content{
+		height: 280px;
+	}
+}

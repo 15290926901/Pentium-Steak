@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>计数器</title>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="numCount">
+            <ul class="clearfix">
+                <li>
+                    <div class="item">
+                        <div class="numU"><span class="numCX" data-startVal="0" data-endVal="363567" data-speed="4" data-decimals="0" id="mumC1">0</span></div>
+                        <div class="indc">股权代码</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="numU"><span class="numCX" data-startVal="0" data-endVal="2000" data-speed="4" data-decimals="0" id="mumC2">0</span><sub class="unitC">年</sub></div>
+                        <div class="indc">成立</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="numU"><span class="numCX" data-startVal="0" data-endVal="940" data-speed="4" data-decimals="0" id="mumC3">0</span><sub class="unitC">(万元)</sub></div>
+                        <div class="indc">注册资本</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="numU"><span class="numCX" data-startVal="0" data-endVal="5000" data-speed="4" data-decimals="0" id="mumC4">0</span><sup class="unitC">+</sup></div>
+                        <div class="indc">优质客户</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/count.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        var countCXArr = [];
+        var countCX=function (){
+            $('.numCount').each(function(i, dom) {
+                if(countCXArr[i] && countCXArr[i] === true){
+                    return;
+                }
+                var sT;
+                var ncTop;
+                sT = $(window).scrollTop();
+                ncTop = $(dom).offset().top;
+                var id,decimals, startVal, endVal, duration; 
+                if (sT > ncTop-$(window).height() && sT < ncTop) {
+                    $(dom).find('.numCX').each(function(){
+                        id=$(this).attr('id');
+                        decimals = $(this).attr('data-decimals'),
+                        startVal = $(this).attr('data-startVal'),
+                        endVal = $(this).attr('data-endVal'),
+                        duration = $(this).attr('data-speed'); 
+                        new CountUp(id, startVal, endVal, decimals, duration, {
+                            useEasing: true,//效果
+                            separator: ''//数字分隔符
+                        }).start();// target：目标元素id, startVal：你想要开始的值, endVal：你想要到达的值, decimals：小数位数，默认值为0, duration：动画持续时间为秒，默认值为2, options：选项的可选对象
+                        countCXArr[i] = true;
+                    })         
+                }
+            }) 
+        }
+        countCX();	
+        $(window).on("scroll",function() {
+            countCX();	
+        })	
+    });
+    </script>
+</body>
